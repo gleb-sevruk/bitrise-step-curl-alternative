@@ -13,17 +13,16 @@ func exitErrorf(msg string, args ...interface{}) {
 }
 
 func main() {
-	aws_access_key_id := os.Getenv("aws_access_key_id")
-	aws_secret_access_key := os.Getenv("aws_secret_access_key")
-	aws_build__internal_id := os.Getenv("aws_build_internal_id")
+	aws_build_internal_id := os.Getenv("aws_build_internal_id")
+	briteapps__build_id := os.Getenv("briteapps_build_id")
+	api__url := os.Getenv("api_url")
 
-	aws_build_bucket := "briteapps-builds-output"
 	//aws_build__internal_id := "intuitive_web_solutions/2020-11-04_18-16-13_ee806e7a-cd50-4b8f-90fa-619440b775e8"
-	dist_loc := aws_build__internal_id + "/out/dist/"
-	println(aws_build_bucket)
-	println(dist_loc)
-	fmt.Println("This is the value specified for the input 'aws_access_key_id':", aws_access_key_id)
-	fmt.Println("This is the value specified for the input 'aws_access_key_id':", aws_secret_access_key)
+	println(briteapps__build_id)
+	println(api__url)
+	fmt.Println("This is the value specified for the input 'aws_build_internal_id':", aws_build_internal_id)
+	fmt.Println("This is the value specified for the input 'api__url':", api__url)
+	fmt.Println("This is the value specified for the input 'briteapps__build_id':", briteapps__build_id)
 
 	//
 	// --- Step Outputs: Export Environment Variables for other Steps:
