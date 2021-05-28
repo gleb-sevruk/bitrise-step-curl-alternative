@@ -64,10 +64,10 @@ toolkit:
 
 
 inputs:
-  - aws_build_internal_id: $BA_BUILD_INTERNAL_ID
+  - aws_aab_location: $AWS_AAB_LOCATION
     opts:
-      title: "aws_build_internal_id"
-      summary: id in format intuitive_web_solutions/2020-11-04_18-16-13_ee806e7a-cd50-4b8f-90fa-619440b775e8
+      title: "aws_aab_location"
+      summary: intuitive_web_solutions/2020-11-04_18-16-13_ee806e7a-cd50-4b8f-90fa-619440b775e8/bitrise/app.aab
       is_expand: true
       is_required: true
   - briteapps_build_id: $BRITEAPPS_BUILD_ID
@@ -79,15 +79,15 @@ inputs:
   - api_url: $API_URL
     opts:
       title: "api_url"
-      summary: pk reference to briteapps build
+      summary: api url reference to call
       is_expand: true
       is_required: true
 
 outputs:
   - EXAMPLE_STEP_OUTPUT:
     opts:
-      title: "Example Step Output"
-      summary: Summary. No more than 2-3 sentences.
+      title: "Nothing interesting here, why you looking at this? There is no fun in building cordova build pipelines"
+      summary: Summary. No more than 2-3 sentexnces.
       description: |
         Description of this output.
 
